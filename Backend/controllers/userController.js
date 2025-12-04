@@ -3,7 +3,7 @@ import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { exec } from "child_process";
 
-export const Register = async (req, res) => {
+export const register = async (req, res) => {
     try {
         const {username,password } = req.body;
         // basic validation
@@ -35,7 +35,7 @@ export const Register = async (req, res) => {
         console.log(error);
     }
 }
-export const Login = async (req, res) => {
+export const login = async (req, res) => {
     try {
         const { username, password } = req.body;
         if (!username || !password) {
