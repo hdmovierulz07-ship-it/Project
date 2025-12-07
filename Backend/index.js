@@ -8,6 +8,7 @@ import cors from "cors";
 dotenv.config({
     path:".env"
 })
+
 databaseConnection();
 const app = express(); 
 
@@ -15,8 +16,10 @@ const app = express();
 app.use(express.urlencoded({
     extended:true
 }));
+
 app.use(express.json());
 app.use(cookieParser());
+
 const corsOptions = {
     origin:"http://localhost:9595",
     credentials:true
