@@ -13,7 +13,7 @@ const useGetProfile = (id) => {
                     withCredentials:true
                 });
                 console.log(res);
-                dispatch(getMyProfile(res.data.user));
+                //dispatch(getMyProfile(res.data.user));
             } catch (error) {
                 console.log(error);
             }
