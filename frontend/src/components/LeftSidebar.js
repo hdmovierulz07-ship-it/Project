@@ -41,22 +41,13 @@ const LeftSidebar = () => {
           <CiHome size={24} />
           <h1 className='ml-2 font-bold text-lg'>Home</h1>
         </Link>
-        <div className='flex items-center px-4 py-2 hover:bg-gray-200 rounded-full'>
-          <CiHashtag size={24} />
-          <h1 className='ml-2 font-bold text-lg'>Explore</h1>
-        </div>
-        <div className='flex items-center px-4 py-2 hover:bg-gray-200 rounded-full'>
-          <IoIosNotificationsOutline size={24} />
-          <h1 className='ml-2 font-bold text-lg'>Notifications</h1>
-        </div>
+        
+       
         <Link to={`/profile/${user?._id}`} className='flex items-center px-4 py-2 hover:bg-gray-200 rounded-full'>
           <CiUser size={24} />
           <h1 className='ml-2 font-bold text-lg'>Profile</h1>
         </Link>
-        <div className='flex items-center px-4 py-2 hover:bg-gray-200 rounded-full'>
-          <CiBookmark size={24} />
-          <h1 className='ml-2 font-bold text-lg'>Bookmarks</h1>
-        </div>
+        
         <div 
           onClick={logoutHandler} 
           className='flex items-center px-4 py-2 hover:bg-gray-200 rounded-full cursor-pointer'
@@ -65,10 +56,7 @@ const LeftSidebar = () => {
           <h1 className='ml-2 font-bold text-lg'>Logout</h1>
         </div>
 
-        {/* Post button */}
-        <button className='mt-4 px-4 py-2 bg-[#1D9BF0] text-white rounded-full font-bold w-full'>
-          Post
-        </button>
+       
       </div>
     </div>
   )
